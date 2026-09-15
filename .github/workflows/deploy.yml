@@ -22,6 +22,3 @@ jobs:
           resourceGroupName: RG-VM-PROD
           template: ./bicep/main.bicep
           parameters: adminPassword=${{ secrets.VM_PASSWORD }}
-
-      - name: Deployment Complete
-        run: echo "VM Deployment Successful"
